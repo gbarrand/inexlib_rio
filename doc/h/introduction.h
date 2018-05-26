@@ -11,11 +11,15 @@
     root_ls.cpp     # to see the "keys" in a .root file.
 @endverbatim
  
- There are also .C scripts to read the file from the CERN-ROOT program:
+ There are also .C scripts to read the files from the CERN-ROOT program:
 @verbatim
     read_wroot_root.C
     root read_wroot_tree_root.C
 @endverbatim
+
+  Someone sensitive to software engineering may appreciate the difference in number of lines of
+ code to embarque between inlib/[wroot,rroot] (around 20 kloc) and CERN-ROOT (around 500 kloc) in
+ order to write/read an histogram in a file.
 
   See the README on github for instructions on how to build, install and run.
 
