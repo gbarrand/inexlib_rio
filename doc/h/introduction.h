@@ -2,7 +2,7 @@
 
 @page inexlib_rio_introduction Introduction
 
-  inexlib_rio is the collection of inlib/exlib examples related to our reader/writer implementation
+  inexlib_rio is a collection of inlib/exlib examples related to our inlib writer/reader C++ implementation
  of the CERN-ROOT file format:
 @verbatim
     wroot.cpp       # to produces a wroot.root file with histos and flat ntuples in it.
