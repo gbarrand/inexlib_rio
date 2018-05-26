@@ -2,29 +2,19 @@
 
 @page inexlib_rio_introduction Introduction
 
-  inexlib_rio is the collection of exlib examples related to Python put in a standalone package
- and distribution.
-
-  There are little applications written in C++, that activates Python through its library and
- a set of .py scripts that demonstrate how to activate inlib/exlib from a Python prompt. All
- these use the SWIG wrapping of some (but not all) classes of inlib and exlib.
-
-  C++ apps (in 1.0.0) (source code in inexlib_rio/inexlib/exlib/examples/cpp) :
+  inexlib_rio is the collection of inlib/exlib examples related to our reader/writer implementation
+ of the CERN-ROOT file format:
 @verbatim
-    hello_py.cpp            # to check Python activation from C++.
-    h1d_spy.cpp             # inlib histogram wrapped with swig.
-    plotter_spy_screen.cpp  # exlib plotting wrapped with swig.
-    mandel_py.cpp           # check calling a C++ function from Python.
+    wroot.cpp       # to produces a wroot.root file with histos and flat ntuples in it.
+    rroot.cpp       # to read back histos and the ntuples in the wroot.root file.
+    wroot_tree.cpp  # to write a TTree like structure in a wroot_tree.root file.
+    root_ls.cpp     # to see the "keys" in a .root file.
 @endverbatim
- and .py scripts :
+ 
+ There are also .C scripts to read the file from the CERN-ROOT program:
 @verbatim
-    h1d.py          # inlib histo.
-    rroot.py        # read an histo in a root file.
-    plotter.py      # plot an histo by using softinex graphics and plotting.
-    tree.py         # project a ntuple found in the pawdemo.root file and plot the histo.
-    waxml.py        # write histos at the AIDA XML file format.
-    polyhedron.py   # visualise a solid/shape boolean operation.
-    cfitsio_hst.py  # visualise an image in a fits file.
+    read_wroot_root.C
+    root read_wroot_tree_root.C
 @endverbatim
 
   See the README on github for instructions on how to build, install and run.
